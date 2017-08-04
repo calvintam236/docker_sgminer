@@ -23,7 +23,7 @@ RUN apt-get update \
     && make install \
     && cd .. \
     && rm -r sgminer/ \
-    && apt-get -y remove lsb-release bzip2 ca-certificates curl git pkg-config libtool libncurses5-dev autoconf automake \
+    && apt-get -y remove lsb-release bzip2 ca-certificates curl git pkg-config libtool autoconf automake \
     && apt-get -y autoremove \
     && apt-get clean autoclean \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
