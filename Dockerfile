@@ -12,9 +12,9 @@ RUN apt-get update \
     && rm AMD-APP-SDKInstaller-v3.0.130.136-GA-linux64.tar.bz2 \
     && ./AMD-APP-SDK-v3.0.130.136-GA-linux64.sh -- --acceptEULA 'yes' -s \
     && rm AMD-APP-SDK-v3.0.130.136-GA-linux64.sh \
-    && rm -r /root/AMDAPPSDK-3.0/ \
+    && rm -r /root/AMDAPPSDK-3.0 \
     && git clone https://github.com/tpruvot/sgminer.git \
-    && cd sgminer/ \
+    && cd sgminer \
     && git submodule init \
     && git submodule update \
     && autoreconf -fi \
@@ -22,7 +22,7 @@ RUN apt-get update \
     && make \
     && make install \
     && cd .. \
-    && rm -r sgminer/ \
+    && rm -r sgminer \
     && apt-get -y remove lsb-release bzip2 ca-certificates curl git pkg-config libtool autoconf automake \
     && apt-get -y autoremove \
     && apt-get clean autoclean \
