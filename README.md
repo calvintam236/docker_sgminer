@@ -1,6 +1,6 @@
 # What is sgminer?
 
-sgminer is the console miner provided by [tpruvot](https://github.com/tpruvot/sgminer).
+sgminer is the console miner provided by [genesismining](https://github.com/genesismining/sgminer-gm).
 
 sgminer supports multiple algos.
 
